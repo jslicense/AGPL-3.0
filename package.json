@@ -1,0 +1,19 @@
+{
+  "name": "agpl-3.0",
+  "description": "Plaintext of The GNU Affero General Public License Version 3 from www.gnu.org",
+  "version": "1.0.1",
+  "files": [
+    "README.md",
+    "AGPL-3.0.json",
+    "package.json"
+  ],
+  "keywords": [
+    "jslicense",
+    "license"
+  ],
+  "main": "AGPL-3.0.json",
+  "repository": "jslicense/AGPL-3.0",
+  "scripts": {
+    "prepublish": "node -e \"process.stdout.write(JSON.stringify(require('fs').readFileSync('AGPL-3.0').toString()))\" > AGPL-3.0.json"
+  }
+}
